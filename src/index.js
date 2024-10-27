@@ -13,8 +13,9 @@ app.use(cors());
 
 app.use(
   cors({
-    origin: "*", // Replace with the frontend's URL (React app)
-    methods: "GET,POST,PUT,DELETE,PATCH", // Allowed methods
+    origin: "http://localhost:3000", // Replace with the frontend's URL (React app)
+    methods: "GET,POST,PUT,DELETE,PATCH", // Allowed method
+    allowedHeaders: 'Content-Type,Authorization'
   })
 );
 
